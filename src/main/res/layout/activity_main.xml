@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/baseline_lock_24" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/tap_icon_to_unlock_using_fingerprint"
+
+        android:textColor="#FFDE2E"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/authenticateButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:importantForAccessibility="no"
+        android:scaleType="centerInside"
+        android:src="@drawable/fingerprint"
+        android:text="@string/finger_id" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/or"
+        android:textColor="#FFDE2E"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/enter_4_digit_pin"
+        android:textColor="#FFDE2E"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/ed1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:inputType="number"
+
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/ed2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="7dp"
+            android:gravity="center"
+            android:inputType="number"
+
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/ed3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginStart="7dp"
+            android:inputType="number"
+
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/ed4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="7dp"
+            android:gravity="center"
+            android:inputType="number"
+
+            android:maxLength="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+
+            android:gravity="center"
+            android:text="@string/new_user"
+            android:textColor="#808080"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/setPin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+
+            android:background="@drawable/edittext_background"
+            android:gravity="center"
+            android:text="@string/set_pin"
+            android:textColor="#808080"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Task</string>
+    <string name="finger_id">Finger ID</string>
+    <string name="tap_icon_to_unlock_using_fingerprint">TAP ICON TO UNLOCK USING FINGERPRINT</string>
+    <string name="or">OR</string>
+    <string name="enter_4_digit_pin">ENTER 4 DIGIT PIN</string>
+    <string name="new_user">New User?</string>
+    <string name="enter_4_digit_pins">Enter 4-digit pin</string>
+    <string name="re_enter_4_digit_pin">Re-Enter 4-digit pin</string>
+    <string name="submit">Submit</string>
+    <string name="set_pin">Set Pin</string>
+</resources>

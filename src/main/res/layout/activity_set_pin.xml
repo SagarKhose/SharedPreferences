@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".SetPinAct">
+
+    <EditText
+        android:id="@+id/edPin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_4_digit_pins"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.139" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="284dp"
+        android:layout_height="55dp"
+
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edPin">
+
+        <EditText
+            android:id="@+id/ed1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:inputType="number"
+
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/ed2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:gravity="center"
+            android:inputType="number"
+
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/ed3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:gravity="center"
+            android:inputType="number"
+
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/ed4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:gravity="center"
+            android:inputType="number"
+
+            android:maxLength="1" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/re_enter_4_digit_pin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutRE"
+        android:layout_width="284dp"
+        android:layout_height="55dp"
+
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edConfirm">
+
+        <EditText
+            android:id="@+id/edc1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:inputType="number"
+
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/edc2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:gravity="center"
+            android:inputType="number"
+
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/edc3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:gravity="center"
+            android:inputType="number"
+
+
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/edc4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:gravity="center"
+            android:inputType="number"
+
+            android:maxLength="1" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSubmit"
+        android:layout_width="236dp"
+        android:layout_height="63dp"
+        android:background="@drawable/gradient_button"
+        android:onClick="SubmitPin"
+        android:paddingStart="16dp"
+
+
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:text="@string/submit"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutRE"
+        app:layout_constraintVertical_bias="0.72" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
